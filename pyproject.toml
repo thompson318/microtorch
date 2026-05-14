@@ -21,6 +21,10 @@ dependencies = [
   "jupyter"
 ]
 
+[project.optional-dependencies]
+dev = ["pytest", 
+       "pytest-cov"]
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 

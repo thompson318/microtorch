@@ -1,5 +1,14 @@
 ## Adding Tests
 
+# How to run tests
+
+uv venv
+source .venv/bin/activate
+uv pip install .[dev] 
+
+pytest --cov=.venv/lib/python3.13/site-packages/microtorch  tests/
+
+
 All new compartments must include appropriate unit tests.
 
 Tests should be added to:
